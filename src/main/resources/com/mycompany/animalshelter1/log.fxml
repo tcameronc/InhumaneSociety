@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.LogController">
+   <top>
+      <Label prefHeight="44.0" prefWidth="617.0" text="Inhuman Society - User Activity Log" textFill="#5295cc" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="405.0" prefWidth="165.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="439.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@6117c4fe202ae76d5d1c11e86413d5bf.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Button fx:id="SetHome" mnemonicParsing="false" onAction="#switchToHome" prefHeight="51.0" prefWidth="161.0" text="Home" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

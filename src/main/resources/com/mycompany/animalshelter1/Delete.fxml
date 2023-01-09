@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.DeleteController">
+   <top>
+      <Label text="Inhuman Society" textFill="#5295cc" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="405.0" prefWidth="165.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="439.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@6117c4fe202ae76d5d1c11e86413d5bf.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="adopt" layoutX="5.0" layoutY="313.0" promptText="adopt" />
+            <TextField fx:id="age" layoutX="5.0" layoutY="256.0" promptText="age" />
+            <TextField fx:id="temper" layoutX="5.0" layoutY="281.0" promptText="temper" />
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: red;" text="Home" />
+            <Button fx:id="DeleteActionButton" mnemonicParsing="false" onAction="#handleDeleteAction" prefHeight="51.0" prefWidth="161.0" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#handleUpdateRecord" prefHeight="51.0" prefWidth="161.0" text="Update" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
