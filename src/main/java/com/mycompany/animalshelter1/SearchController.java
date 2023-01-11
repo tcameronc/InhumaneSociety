@@ -29,11 +29,6 @@ import javafx.scene.paint.Stop;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
-/**
- * FXML Controller class
- *
- * @author chuong nguyen
- */
 public class SearchController implements Initializable {
      @FXML
     private TableView tableView;
