@@ -1,4 +1,4 @@
-Google doc with pictures : shorturl.at/cksV7
+Google doc with pictures : https://docs.google.com/document/d/1p14ITdkbtSMM0hpLY5SUtwyWwYTebQLfqq6-MV0kS4w/edit
 
 The InhumaneSociety is a java program composed in netbeans that uses a SQL database for CRUD operations. It uses mock data designed to resemble an animal shelter.
 
