@@ -1,5 +1,7 @@
 Google doc with pictures : shorturl.at/cksV7
 
+The InhumaneSociety is a java program composed in netbeans that uses a SQL database for CRUD operations. It uses mock data designed to resemble an animal shelter.
+
 Guest login goes to the guest page where one can see, but not interact with, the database.
 
 User Login requires a valid user from the credentials table to login. 
