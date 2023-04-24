@@ -4,10 +4,6 @@
  */
 package com.mycompany.animalshelter1;
 
-/**
- *
- * @author Chuong
- */
 public class Home1 {
     private int number;
     private String sex;
