@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #edf0f3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.HomeController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="822.0" style="-fx-background-color: #edf0f3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.HomeController">
    <top>
       <Label text="Inhumane Society" textFill="#071318" BorderPane.alignment="CENTER">
          <font>
@@ -19,38 +19,34 @@
       </Label>
    </top>
    <bottom>
-      <HBox prefHeight="90.0" prefWidth="881.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="42.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="92.0" style="-fx-background-color: #f92525;" text="Home">
+            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="78.0" style="-fx-background-color: #f92525;" text="Home">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="Addbutton" mnemonicParsing="false" onAction="#switchToAdd" prefHeight="44.0" prefWidth="82.0" style="-fx-background-color: #a0c8f0;" text="Add">
+            <Button fx:id="Addbutton" mnemonicParsing="false" onAction="#switchToAdd" prefHeight="43.0" prefWidth="65.0" style="-fx-background-color: #a0c8f0;" text="Add">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="research" mnemonicParsing="false" onAction="#research" prefHeight="44.0" prefWidth="137.0" text="Search">
+            <Button fx:id="research" mnemonicParsing="false" onAction="#research" prefHeight="43.0" prefWidth="83.0" text="Search">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="textFieldSearch" prefHeight="44.0" prefWidth="110.0" promptText="Enter Field">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </TextField>
-            <TextField fx:id="textFieldSearch2" prefHeight="44.0" prefWidth="138.0" promptText="Search Perameter" />
-            <Button mnemonicParsing="false" onAction="#SwitchToDelete" prefHeight="44.0" prefWidth="107.0" text="Delete">
+            <TextField fx:id="textFieldSearch" prefHeight="43.0" prefWidth="167.0" promptText="Enter Field" />
+            <TextField fx:id="textFieldSearch2" prefHeight="43.0" prefWidth="201.0" promptText="Enter Perameter" />
+            <Button mnemonicParsing="false" onAction="#SwitchToDelete" prefHeight="43.0" prefWidth="76.0" text="Delete">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button fx:id="Logsbutton" mnemonicParsing="false" onAction="#switchToLogs" prefHeight="43.0" prefWidth="137.0" text="Logs">
+            <Button fx:id="Logsbutton" mnemonicParsing="false" onAction="#switchToLogs" prefHeight="43.0" prefWidth="64.0" text="Logs">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="44.0" prefWidth="137.0" text="Account">
+            <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="43.0" prefWidth="90.0" text="Account">
                <font>
                   <Font size="18.0" />
                </font>
@@ -62,7 +58,7 @@
       <TableView fx:id="tableView" prefHeight="326.0" prefWidth="363.0" BorderPane.alignment="CENTER" />
    </center>
    <right>
-      <ImageView fitHeight="466.0" fitWidth="237.0" BorderPane.alignment="CENTER">
+      <ImageView fitHeight="512.0" fitWidth="230.0" BorderPane.alignment="CENTER">
          <image>
             <Image url="@Document.jpg" />
          </image>
