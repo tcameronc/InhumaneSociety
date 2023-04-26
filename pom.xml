@@ -33,6 +33,13 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
+                    <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.mycompany.animalshelter1.App</mainClass>
+          </manifest>
+        </archive>
                     <release>11</release>
                 </configuration>
             </plugin>
