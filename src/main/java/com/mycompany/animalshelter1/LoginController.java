@@ -90,7 +90,7 @@ public class LoginController implements Initializable {
                     System.out.println("[LOGIN SUCCESSFUL] - " + enteredUser);
                     this.CurrentUser = enteredUser.substring(0, 1).toUpperCase() + enteredUser.substring(1);
                     this.userID = rs.getInt("ID");
-                    TriggerLogTable(cn1, enteredUser, "User Login");        
+                    TriggerLogTable(cn1, enteredUser, "User Login ");        
                     App.setRoot("home");
                     rs.close();
                     break;

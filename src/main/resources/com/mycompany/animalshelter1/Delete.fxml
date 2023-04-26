@@ -11,37 +11,40 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.DeleteController">
+<BorderPane prefHeight="643.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.DeleteController">
    <top>
-      <Label text="Inhuman Society" textFill="#5295cc" BorderPane.alignment="CENTER">
+      <Label text="Inhuman Society" textFill="#080e13" BorderPane.alignment="CENTER">
          <font>
             <Font name="Bodoni MT" size="36.0" />
          </font>
       </Label>
    </top>
    <center>
-      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
    </center>
    <right>
       <Pane prefHeight="405.0" prefWidth="165.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="439.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="217.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@6117c4fe202ae76d5d1c11e86413d5bf.png" />
                </image>
             </ImageView>
-            <TextField fx:id="adopt" layoutX="5.0" layoutY="313.0" promptText="adopt" />
-            <TextField fx:id="age" layoutX="5.0" layoutY="256.0" promptText="age" />
-            <TextField fx:id="temper" layoutX="5.0" layoutY="281.0" promptText="temper" />
+            <TextField fx:id="adopt" layoutY="298.0" prefHeight="43.0" prefWidth="165.0" promptText="adopt" />
+            <TextField fx:id="age" layoutY="212.0" prefHeight="43.0" prefWidth="165.0" promptText="age" />
+            <TextField fx:id="temper" layoutY="255.0" prefHeight="43.0" prefWidth="166.0" promptText="temper" />
          </children>
       </Pane>
    </right>
    <bottom>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="43.0" prefWidth="470.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: red;" text="Home" />
-            <Button fx:id="DeleteActionButton" mnemonicParsing="false" onAction="#handleDeleteAction" prefHeight="51.0" prefWidth="161.0" text="Delete" />
-            <Button mnemonicParsing="false" onAction="#handleUpdateRecord" prefHeight="51.0" prefWidth="161.0" text="Update" />
+            <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: #6897bb;" text="Home" />
+            <Button fx:id="DeleteActionButton" mnemonicParsing="false" onAction="#handleDeleteAction" prefHeight="43.0" prefWidth="161.0" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#handleUpdateRecord" prefHeight="43.0" prefWidth="166.0" text="Update" />
          </children>
       </HBox>
    </bottom>

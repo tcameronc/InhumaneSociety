@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="822.0" style="-fx-background-color: #edf0f3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.HomeController">
+<BorderPane style="-fx-background-color: #edf0f3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.HomeController">
    <top>
       <Label text="Inhumane Society" textFill="#071318" BorderPane.alignment="CENTER">
          <font>
@@ -19,7 +19,7 @@
       </Label>
    </top>
    <bottom>
-      <HBox prefHeight="42.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <HBox BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="78.0" style="-fx-background-color: #f92525;" text="Home">
                <font>
@@ -46,7 +46,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="43.0" prefWidth="90.0" text="Account">
+            <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="43.0" prefWidth="95.0" text="Account">
                <font>
                   <Font size="18.0" />
                </font>
@@ -55,10 +55,13 @@
       </HBox>
    </bottom>
    <center>
-      <TableView fx:id="tableView" prefHeight="326.0" prefWidth="363.0" BorderPane.alignment="CENTER" />
+      <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
    </center>
    <right>
-      <ImageView fitHeight="512.0" fitWidth="230.0" BorderPane.alignment="CENTER">
+      <ImageView fitHeight="591.0" fitWidth="235.0" BorderPane.alignment="CENTER">
          <image>
             <Image url="@Document.jpg" />
          </image>

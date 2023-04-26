@@ -93,40 +93,40 @@ public class HomeController implements Initializable {
 
     private void intializeColumns() {
         number = new TableColumn("Number");
-        number.setMinWidth(75);
+        number.setMinWidth(0);
         number.setCellValueFactory(new PropertyValueFactory<faculty, Integer>("number"));
 
         TableColumn sex = new TableColumn("Sex");
-        sex.setMinWidth(75);
+        sex.setMinWidth(0);
         sex.setCellValueFactory(new PropertyValueFactory<faculty, String>("sex"));
 
         TableColumn species = new TableColumn("Species");
-        species.setMinWidth(75);
+        species.setMinWidth(0);
         species.setCellValueFactory(new PropertyValueFactory<faculty, Integer>("species"));
 
         TableColumn breed = new TableColumn("Breed");
-        breed.setMinWidth(75);
+        breed.setMinWidth(0);
         breed.setCellValueFactory(new PropertyValueFactory<faculty, String>("breed"));
         
-        TableColumn name = new TableColumn("name");
-        name.setMinWidth(75);
+        TableColumn name = new TableColumn("Name");
+        name.setMinWidth(0);
         name.setCellValueFactory(new PropertyValueFactory<faculty, String>("name"));
                 
-        TableColumn age = new TableColumn("age");
-        age.setMinWidth(75);
+        TableColumn age = new TableColumn("Age");
+        age.setMinWidth(0);
         age.setCellValueFactory(new PropertyValueFactory<faculty, Integer>("age"));
         
         
-        TableColumn temper = new TableColumn("temper");
-        temper.setMinWidth(75);
+        TableColumn temper = new TableColumn("Temper");
+        temper.setMinWidth(0);
         temper.setCellValueFactory(new PropertyValueFactory<faculty, Integer>("temper"));
          
-        TableColumn adoptable = new TableColumn("adoptable");
-        adoptable.setMinWidth(75);
+        TableColumn adoptable = new TableColumn("Adoptable");
+        adoptable.setMinWidth(0);
         adoptable.setCellValueFactory(new PropertyValueFactory<faculty, Integer>("adoptable"));
         
-        TableColumn username = new TableColumn("username");
-        username.setMinWidth(100);
+        TableColumn username = new TableColumn("Username");
+        username.setMinWidth(0);
         username.setCellValueFactory(new PropertyValueFactory<faculty, Integer>("username"));
         
         tableView.setItems(data);

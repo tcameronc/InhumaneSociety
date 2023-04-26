@@ -10,12 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.LogController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.LogController">
    <top>
-      <Label prefHeight="44.0" prefWidth="617.0" text="Inhuman Society - User Activity Log" textFill="#5295cc" BorderPane.alignment="CENTER">
+      <Label prefHeight="44.0" prefWidth="617.0" text="Inhuman Society - User Activity Log" BorderPane.alignment="CENTER">
          <font>
-            <Font name="Bodoni MT" size="36.0" />
+            <Font name="Bodoni MT Bold" size="36.0" />
          </font>
       </Label>
    </top>
@@ -34,9 +33,9 @@
       </Pane>
    </right>
    <bottom>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
+      <HBox prefHeight="43.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
          <children>
-            <Button fx:id="SetHome" mnemonicParsing="false" onAction="#switchToHome" prefHeight="51.0" prefWidth="161.0" text="Home" />
+            <Button fx:id="SetHome" mnemonicParsing="false" onAction="#switchToHome" prefHeight="43.0" prefWidth="161.0" text="Home" />
          </children>
       </HBox>
    </bottom>

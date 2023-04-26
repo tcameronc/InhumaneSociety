@@ -60,42 +60,41 @@ public class GuestController implements Initializable {
 
     private void intializeColumns() {
         number = new TableColumn("Number");
-        number.setMinWidth(80);
+        number.setMinWidth(0);
         number.setCellValueFactory(new PropertyValueFactory<Home1, Integer>("number"));
 
         TableColumn sex = new TableColumn("Sex");
-        sex.setMinWidth(80);
+        sex.setMinWidth(0);
         sex.setCellValueFactory(new PropertyValueFactory<Home1, String>("sex"));
 
         TableColumn species = new TableColumn("Species");
-        species.setMinWidth(80);
+        species.setMinWidth(0);
         species.setCellValueFactory(new PropertyValueFactory<Home1, Integer>("species"));
 
         TableColumn breed = new TableColumn("Breed");
-        breed.setMinWidth(80);
+        breed.setMinWidth(0);
         breed.setCellValueFactory(new PropertyValueFactory<Home1, String>("breed"));
         TableColumn name = new TableColumn("name");
-        name.setMinWidth(80);
+        name.setMinWidth(0);
         name.setCellValueFactory(new PropertyValueFactory<Home1, String>("name"));
                 
         TableColumn age = new TableColumn("age");
-        age.setMinWidth(80);
+        age.setMinWidth(0);
         age.setCellValueFactory(new PropertyValueFactory<Home1, Integer>("age"));
         
-        
         TableColumn temper = new TableColumn("temper");
-        temper.setMinWidth(80);
+        temper.setMinWidth(0);
         temper.setCellValueFactory(new PropertyValueFactory<Home1, Integer>("temper"));
          
         TableColumn adoptable = new TableColumn("adoptable");
-        adoptable.setMinWidth(80);
+        adoptable.setMinWidth(0);
         adoptable.setCellValueFactory(new PropertyValueFactory<Home1, Integer>("adoptable"));
         
         tableView.setItems(data);
         tableView.getColumns().addAll(number, sex, species, breed, name, age, temper, adoptable);
         
-
     }
+    
     private void loadData() throws SQLException{
         Connection conn = null;
         Statement stmt = null;

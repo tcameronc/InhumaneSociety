@@ -11,56 +11,58 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f9f8dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.AddController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #BCBCBC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.animalshelter1.AddController">
    <top>
-      <Label text="Inhumane Society" textFill="#0d8ece" BorderPane.alignment="CENTER">
+      <Label text="Inhumane Society" BorderPane.alignment="CENTER">
          <font>
             <Font name="Bodoni MT Bold" size="36.0" />
          </font>
       </Label>
    </top>
    <bottom>
-      <HBox prefHeight="44.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: #f92525;" text="Home">
+            <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="43.0" prefWidth="73.0" style="-fx-background-color: #f92525;" text="Home">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#switchToSearch" text="Search">
+            <Button mnemonicParsing="false" onAction="#switchToSearch" prefHeight="43.0" prefWidth="78.0" text="Search">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="accountButton" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="39.0" prefWidth="75.0" text="account">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
+            <Button fx:id="accountButton" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="43.0" prefWidth="103.0" text="Account" />
+            <Button fx:id="InsertButton" mnemonicParsing="false" onAction="#handleAddAnimal" prefHeight="43.0" prefWidth="77.0" text="Insert" />
          </children>
       </HBox>
    </bottom>
    <center>
-      <TableView fx:id="tableView" prefHeight="326.0" prefWidth="363.0" BorderPane.alignment="CENTER" />
+      <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
    </center>
    <right>
       <Pane BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="190.0" fitWidth="218.0" layoutY="50.0">
+            <ImageView fitHeight="152.0" fitWidth="214.0">
                <image>
                   <Image url="@cat-dog-computer.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="InsertButton" layoutX="149.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleAddAnimal" text="Insert" />
-            <TextField fx:id="TxtNumber" layoutY="314.0" promptText="Numbers" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtSex" layoutY="339.0" promptText="Sex" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtSpecies" layoutY="364.0" promptText="Species" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtBreed" layoutY="389.0" promptText="Breed" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtAge" layoutY="414.0" promptText="Age" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtName" layoutY="439.0" promptText="Name" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtTemper" layoutY="464.0" promptText="Temper" style="-fx-background-color: #EBEDEF;" />
-            <TextField fx:id="TxtAdoptable" layoutY="485.0" promptText="Adopable" style="-fx-background-color: #EBEDEF;" />
-            <Label fx:id="footerLabel" layoutX="158.0" layoutY="343.0" text="Application Status" />
+            <TextField fx:id="TxtNumber" layoutY="152.0" prefHeight="43.0" prefWidth="215.0" promptText="Numbers" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtSex" layoutY="195.0" prefHeight="43.0" prefWidth="215.0" promptText="Sex" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtSpecies" layoutY="235.0" prefHeight="43.0" prefWidth="215.0" promptText="Species" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtBreed" layoutY="278.0" prefHeight="43.0" prefWidth="215.0" promptText="Breed" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtAge" layoutY="321.0" prefHeight="43.0" prefWidth="215.0" promptText="Age" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtName" layoutY="364.0" prefHeight="43.0" prefWidth="215.0" promptText="Name" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtTemper" layoutY="407.0" prefHeight="43.0" prefWidth="215.0" promptText="Temper" style="-fx-background-color: #EBEDEF;" />
+            <TextField fx:id="TxtAdoptable" layoutY="450.0" prefHeight="43.0" prefWidth="215.0" promptText="Adopable" style="-fx-background-color: #EBEDEF;" />
+            <Label fx:id="footerLabel" layoutY="488.0" prefHeight="32.0" prefWidth="161.0" text="Ready">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
          </children>
       </Pane>
    </right>
